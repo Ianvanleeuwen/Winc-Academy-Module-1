@@ -1,0 +1,15 @@
+body{
+    background-color:gray;
+    color:Black;
+    text-emphasis: family; arial
+}
+
+.black-border {
+    border: 5px solid black;
+}
+p.black-border{
+    background-color: white;
+}
+#green-background {
+    background-color: white;
+}
