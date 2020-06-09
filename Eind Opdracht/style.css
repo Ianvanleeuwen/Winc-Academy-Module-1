@@ -1,0 +1,231 @@
+.body {
+    background-color: #1569C7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:White;
+}
+a:hover{
+    color:red
+}
+.container-parent{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#1569C7 ;
+    display: grid;
+    height: 700px;
+    grid-template-columns: 6, 1fr;
+    grid-template-rows: 220px 50px 1fr 1fr;
+    grid-template-areas: 
+    "h h h h h h"
+    "n n n n n n"
+    "m m m m m m"
+    "a a a a a a"
+    "f f f f f f"
+    ; 
+    
+}
+.header{
+    grid-area: h;
+    text-align: center;
+
+}
+.header img{
+    margin-top: 10px;
+    background-color: white;
+}
+.nav{
+    grid-area: n;
+    text-align: center;
+}
+.nav ul{
+    list-style-type: none;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.nav li a{
+                    font-size: x-large;
+                    display: block;
+                    color:white;
+                    text-align: center;
+                    text-decoration: none;
+                    padding:14px 16px;
+}
+.nav li a:hover{
+                            background-color:black;
+                            color:white
+}
+.nav li{
+    float: left;
+}
+.nav li a.active{
+    background-color: lightgreen;
+}
+.main{
+    grid-area: m;
+    margin: 50px 30px;
+    border: 3px solid white;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+}
+.socials{
+    grid-area: m;
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #333;
+}
+.socials p{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    width:200px;
+    color:white;
+    text-decoration: none;
+}
+.socials a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.socials:hover{
+    background-color: black;
+    color: white;
+}
+.socials p:hover{
+    background-color: black;
+    color: white;
+}
+.aside{
+    grid-area: a;
+    margin: 50px 30px;
+    border: 3px solid white;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+}
+.aside p{
+    margin-top: 30px;
+}
+.aside a{
+    border: 3px solid white;
+    padding: 15px 50px;
+    background-color: #1569C7;
+    color: white;
+    text-align: center;
+    width: 500px;
+}
+.aside a:hover{
+        background-color:black;
+        color:white
+}
+.footer{
+    grid-area: f;
+    bottom: 0%;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0px 100px;
+    background-color: #333;;
+}
+.elftal{
+    background-color: #333;
+    text-decoration: none;
+    text-align: center;
+    border:3px dotted white;
+    font-size: large;
+    margin: 30px auto;
+    width: 500px;
+    overflow: hidden;
+    color: white;
+
+}
+.elftal li{
+    text-decoration: none;
+    
+}
+.elftal div{
+    text-decoration: none;
+    background-color: #333;
+    border: 3px dotted white;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    padding:10px 0px 10px 40px;
+}
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background: transparent
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-fields, .msg{
+    width:48%;
+}
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0px;
+    background:transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+.msg textarea{
+    height: 212px;
+}
+::-webkit-input-placeholder{
+    color:#c5ecfd
+}
+::-moz-input-placeholder{
+    color:#c5ecfd
+}
+::-ms-input-placeholder{
+    color:#c5ecfd
+}
+.btn{
+    background: black;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 900px){
+    .container-parent{
+        grid-template-areas: 
+        "h h h h h h"
+        "n n n n n n"
+        "m m m a a a"
+        "f f f f f f"
+            ; 
+    }
+}
